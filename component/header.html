@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Presidency School</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    /* ================================
+       MAIN HEADER
+    ================================= */
+
+    .main-header {
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow:
+        0 10px 30px rgba(33, 29, 114, 0.10),
+        0 2px 8px rgba(0, 0, 0, 0.06);
+      border-bottom: 1px solid rgba(33, 29, 114, 0.08);
+    }
+
+    /* Logo shadow */
+    .logo-box {
+      box-shadow: 0 5px 18px rgba(33, 29, 114, 0.15);
+    }
+
+    /* Navigation */
+    .nav-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .nav-link::before {
+      content: "";
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #ebbd25;
+      left: 50%;
+      bottom: -9px;
+      transform: translateX(-50%) scale(0);
+      transition: 0.3s ease;
+    }
+
+    .nav-link:hover {
+      color: #211d72;
+    }
+
+    .nav-link:hover::before {
+      transform: translateX(-50%) scale(1);
+    }
+
+    /* Active link */
+    .nav-link.active {
+      color: #211d72;
+      font-weight: 700;
+    }
+
+    .nav-link.active::before {
+      transform: translateX(-50%) scale(1);
+    }
+
+    /* Enroll button */
+    .enroll-btn {
+      background: linear-gradient(
+        135deg,
+        #211d72,
+        #3730a3
+      );
+
+      box-shadow:
+        0 8px 18px rgba(33, 29, 114, 0.25);
+
+      transition: all 0.3s ease;
+    }
+
+    .enroll-btn:hover {
+      transform: translateY(-2px);
+      box-shadow:
+        0 12px 25px rgba(33, 29, 114, 0.35);
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      box-shadow:
+        -10px 0 40px rgba(0, 0, 0, 0.15);
+    }
+
+    .mobile-link {
+      transition: all 0.25s ease;
+    }
+
+    .mobile-link:hover {
+      color: #211d72;
+      padding-left: 8px;
+    }
+
+    /* Mobile menu animation */
+    .menu-open {
+      transform: translateX(0) !important;
+    }
+
+    /* Menu button */
+    .menu-button {
+      box-shadow: 0 5px 15px rgba(33, 29, 114, 0.12);
+    }
+  </style>
+</head>
+
+
+<body class="bg-gray-100">
+
+
+  <!-- =====================================================
+       HEADER
+  ====================================================== -->
+
+  <header class="main-header sticky top-0 z-50">
+
+    <div
+      class="max-w-7xl mx-auto px-5 sm:px-6 lg:px-8"
+    >
+
+      <div
+        class="h-20 flex items-center justify-between"
+      >
+
+        <!-- ===============================
+             LOGO
+        ================================ -->
+
+        <a href="index.html" class="flex items-center" > <div class="logo-box bg-white rounded-xl px-5 py-3"> <span class="text-2xl sm:text-3xl font-extrabold tracking-tight text-[#211d72]" > Presidency <span class="text-[#ebbd25]">School</span> </span> </div> </a>
+
+
+        <!-- ===============================
+             DESKTOP NAVIGATION
+        ================================ -->
+
+        <nav
+          class="hidden lg:flex items-center gap-7"
+        >
+
+          <a
+            href="index.html"
+            class="nav-link active text-sm font-medium text-gray-700 py-2"
+          >
+            Home
+          </a>
+
+          <a
+            href="about.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            About
+          </a>
+
+          <a
+            href="academic.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            Academics
+          </a>
+
+          <a
+            href="admission.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            Admissions
+          </a>
+
+          <a
+            href="mandatory-disclosure.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            Mandatory Disclosure
+          </a>
+
+          <a
+            href="gallery.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            Gallery
+          </a>
+
+          <a
+            href="contact.html"
+            class="nav-link text-sm font-medium text-gray-700 py-2"
+          >
+            Contact
+          </a>
+
+        </nav>
+
+
+        <!-- ===============================
+             DESKTOP ENROLL BUTTON
+        ================================ -->
+
+        <div class="hidden lg:block">
+
+          <a
+            href="admission.html"
+            class="enroll-btn inline-flex items-center gap-2 text-white font-semibold text-sm px-6 py-3 rounded-full"
+          >
+
+            <span>Enroll Now</span>
+
+            <i class="text-lg">→</i>
+
+          </a>
+
+        </div>
+
+
+        <!-- ===============================
+             MOBILE MENU BUTTON
+        ================================ -->
+
+        <button
+          onclick="openMenu()"
+          aria-label="Open Menu"
+          class="menu-button lg:hidden w-11 h-11 flex items-center justify-center rounded-xl bg-white text-[#211d72] text-2xl"
+        >
+          ☰
+        </button>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         MOBILE MENU
+    ====================================================== -->
+
+    <div
+      id="mobileMenu"
+      class="mobile-menu fixed top-0 right-0 h-full w-[290px] bg-white transform translate-x-full transition-transform duration-300 z-[60]"
+    >
+
+      <!-- Mobile Header -->
+
+      <div
+        class="flex items-center justify-between px-5 py-5 border-b border-gray-100"
+      >
+
+        <img
+          src="images/pillar-logo.png"
+          alt="Presidency School"
+          class="h-9 w-auto"
+        />
+
+        <button
+          onclick="closeMenu()"
+          class="w-10 h-10 rounded-full bg-gray-100 text-gray-700 text-2xl"
+        >
+          ×
+        </button>
+
+      </div>
+
+
+      <!-- Mobile Navigation -->
+
+      <nav
+        class="flex flex-col px-6 py-7 gap-2"
+      >
+
+        <a
+          href="index.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-semibold text-[#211d72]"
+        >
+          Home
+        </a>
+
+        <a
+          href="about.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          About
+        </a>
+
+        <a
+          href="academic.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          Academics
+        </a>
+
+        <a
+          href="admission.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          Admissions
+        </a>
+
+        <a
+          href="mandatory-disclosure.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          Mandatory Disclosure
+        </a>
+
+        <a
+          href="gallery.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          Gallery
+        </a>
+
+        <a
+          href="contact.html"
+          onclick="closeMenu()"
+          class="mobile-link py-3 border-b border-gray-100 font-medium text-gray-700"
+        >
+          Contact
+        </a>
+
+
+        <!-- Mobile Enroll Button -->
+
+        <a
+          href="admission.html"
+          onclick="closeMenu()"
+          class="enroll-btn mt-5 text-center text-white font-semibold px-5 py-3 rounded-full"
+        >
+          Enroll Now →
+        </a>
+
+      </nav>
+
+    </div>
+
+
+    <!-- =====================================================
+         OVERLAY
+    ====================================================== -->
+
+    <div
+      id="overlay"
+      class="fixed inset-0 bg-black/40 hidden z-50"
+      onclick="closeMenu()"
+    ></div>
+
+  </header>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    const mobileMenu =
+      document.getElementById("mobileMenu");
+
+    const overlay =
+      document.getElementById("overlay");
+
+
+    function openMenu() {
+
+      mobileMenu.classList.add("menu-open");
+
+      overlay.classList.remove("hidden");
+
+      document.body.style.overflow = "hidden";
+
+    }
+
+
+    function closeMenu() {
+
+      mobileMenu.classList.remove("menu-open");
+
+      overlay.classList.add("hidden");
+
+      document.body.style.overflow = "";
+
+    }
+
+
+    /* Close menu when clicking ESC */
+
+    document.addEventListener("keydown", function(event) {
+
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+
+    });
+
+  </script>
+
+
+</body>
+</html>
+

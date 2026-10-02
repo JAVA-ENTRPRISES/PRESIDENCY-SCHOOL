@@ -1,0 +1,874 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Admissions | Genius English Medium School</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .card-hover {
+      transition: all 0.35s ease;
+    }
+
+    .card-hover:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+    }
+
+    .step-line {
+      position: absolute;
+      top: 30px;
+      left: 50%;
+      width: 100%;
+      height: 3px;
+      background: #dbeafe;
+      z-index: 0;
+    }
+
+    .step-circle {
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (max-width: 768px) {
+      .step-line {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-slate-50 text-gray-800">
+
+  <!-- HEADER -->
+  <div id="header"></div>
+
+
+  <!-- =====================================================
+       HERO
+  ====================================================== -->
+  <section class="relative overflow-hidden bg-[#0f3d5e]">
+
+    <div class="max-w-7xl mx-auto px-6 py-16 lg:py-24">
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <!-- LEFT CONTENT -->
+        <div class="text-white">
+
+          <span
+            class="inline-flex items-center gap-2 bg-white/10 border border-white/20 px-4 py-2 rounded-full text-sm font-medium mb-6"
+          >
+            <i class="fa-solid fa-graduation-cap text-yellow-300"></i>
+            Admissions Open 2026–27
+          </span>
+
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6"
+          >
+            Begin Your Child's
+            <span class="text-yellow-300">Bright Future</span>
+            With Us
+          </h1>
+
+          <p class="text-blue-100 text-lg leading-8 max-w-xl mb-8">
+            Give your child an inspiring learning environment where knowledge,
+            confidence, discipline and creativity grow together.
+          </p>
+
+          <div class="flex flex-wrap gap-4">
+
+            <a
+              href="#enquiry"
+              class="bg-yellow-400 hover:bg-yellow-300 text-gray-900 font-bold px-7 py-3.5 rounded-xl transition shadow-lg"
+            >
+              Apply for Admission
+              <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+
+            <a
+              href="#process"
+              class="border border-white/40 hover:bg-white hover:text-[#0f3d5e] text-white font-semibold px-7 py-3.5 rounded-xl transition"
+            >
+              Admission Process
+            </a>
+
+          </div>
+
+          <!-- SMALL STATS -->
+          <div class="grid grid-cols-3 gap-6 mt-10 max-w-lg">
+
+            <div>
+              <h3 class="text-2xl font-bold">500+</h3>
+              <p class="text-blue-200 text-sm">Students</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold">25+</h3>
+              <p class="text-blue-200 text-sm">Teachers</p>
+            </div>
+
+            <div>
+              <h3 class="text-2xl font-bold">10+</h3>
+              <p class="text-blue-200 text-sm">Years</p>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- RIGHT IMAGE + FORM CARD -->
+        <div class="relative">
+
+          <div class="rounded-3xl overflow-hidden shadow-2xl">
+
+            <img
+              src="assets/images/admission.jpg"
+              alt="School Admission"
+              class="w-full h-[420px] object-cover"
+            />
+
+          </div>
+
+          <!-- FLOATING CARD -->
+          <div
+            class="absolute -bottom-7 left-5 right-5 md:left-10 md:right-10 bg-white rounded-2xl shadow-2xl p-5"
+          >
+
+            <div class="flex items-center gap-4">
+
+              <div
+                class="w-12 h-12 rounded-xl bg-blue-100 text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-calendar-check text-xl"></i>
+              </div>
+
+              <div>
+                <p class="text-sm text-gray-500">
+                  Academic Session
+                </p>
+
+                <h3 class="font-bold text-lg">
+                  2026 – 2027
+                </h3>
+              </div>
+
+              <div class="ml-auto">
+
+                <a
+                  href="#enquiry"
+                  class="bg-[#0f3d5e] text-white px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-800 transition"
+                >
+                  Enquire
+                </a>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       WHY ADMISSION
+  ====================================================== -->
+  <section class="py-20 bg-white">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center max-w-2xl mx-auto mb-14">
+
+        <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">
+          Why Choose Us
+        </span>
+
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">
+          A School Where Children Can Grow
+        </h2>
+
+        <p class="text-gray-600 mt-4">
+          We provide a balanced educational environment focused on academics,
+          character, creativity and overall development.
+        </p>
+
+      </div>
+
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <!-- CARD -->
+        <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100">
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-blue-100 text-blue-600 flex items-center justify-center mb-5"
+          >
+            <i class="fa-solid fa-chalkboard-user text-2xl"></i>
+          </div>
+
+          <h3 class="text-lg font-bold mb-2">
+            Experienced Teachers
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Dedicated teachers provide personalized guidance and meaningful
+            classroom experiences.
+          </p>
+
+        </div>
+
+
+        <!-- CARD -->
+        <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100">
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-green-100 text-green-600 flex items-center justify-center mb-5"
+          >
+            <i class="fa-solid fa-laptop text-2xl"></i>
+          </div>
+
+          <h3 class="text-lg font-bold mb-2">
+            Smart Learning
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Technology-enabled classrooms encourage interactive and engaging
+            learning.
+          </p>
+
+        </div>
+
+
+        <!-- CARD -->
+        <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100">
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-orange-100 text-orange-600 flex items-center justify-center mb-5"
+          >
+            <i class="fa-solid fa-shield-heart text-2xl"></i>
+          </div>
+
+          <h3 class="text-lg font-bold mb-2">
+            Safe Environment
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            A disciplined and supportive campus designed around student
+            safety and well-being.
+          </p>
+
+        </div>
+
+
+        <!-- CARD -->
+        <div class="card-hover bg-slate-50 rounded-2xl p-7 border border-slate-100">
+
+          <div
+            class="w-14 h-14 rounded-2xl bg-purple-100 text-purple-600 flex items-center justify-center mb-5"
+          >
+            <i class="fa-solid fa-trophy text-2xl"></i>
+          </div>
+
+          <h3 class="text-lg font-bold mb-2">
+            Holistic Growth
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Academics, sports, creativity and leadership activities support
+            overall student development.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       ADMISSION PROCESS
+  ====================================================== -->
+  <section id="process" class="py-20 bg-slate-100">
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+
+        <span class="text-blue-600 font-semibold uppercase tracking-wider text-sm">
+          Simple & Easy
+        </span>
+
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">
+          Admission Process
+        </h2>
+
+        <p class="text-gray-600 mt-4">
+          Follow these simple steps to complete the admission process.
+        </p>
+
+      </div>
+
+
+      <div class="relative">
+
+        <!-- CONNECTING LINE -->
+        <div class="step-line"></div>
+
+
+        <div class="grid md:grid-cols-4 gap-10 relative">
+
+          <!-- STEP 1 -->
+          <div class="text-center">
+
+            <div
+              class="step-circle w-16 h-16 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg border-8 border-slate-100"
+            >
+              01
+            </div>
+
+            <h3 class="font-bold text-lg mt-6 mb-2">
+              Enquiry
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-6">
+              Contact the school office or submit an online enquiry.
+            </p>
+
+          </div>
+
+
+          <!-- STEP 2 -->
+          <div class="text-center">
+
+            <div
+              class="step-circle w-16 h-16 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg border-8 border-slate-100"
+            >
+              02
+            </div>
+
+            <h3 class="font-bold text-lg mt-6 mb-2">
+              Interaction
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-6">
+              Attend the student and parent interaction session.
+            </p>
+
+          </div>
+
+
+          <!-- STEP 3 -->
+          <div class="text-center">
+
+            <div
+              class="step-circle w-16 h-16 mx-auto bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold shadow-lg border-8 border-slate-100"
+            >
+              03
+            </div>
+
+            <h3 class="font-bold text-lg mt-6 mb-2">
+              Verification
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-6">
+              Submit the required documents for verification.
+            </p>
+
+          </div>
+
+
+          <!-- STEP 4 -->
+          <div class="text-center">
+
+            <div
+              class="step-circle w-16 h-16 mx-auto bg-yellow-400 text-gray-900 rounded-full flex items-center justify-center text-xl font-bold shadow-lg border-8 border-slate-100"
+            >
+              04
+            </div>
+
+            <h3 class="font-bold text-lg mt-6 mb-2">
+              Confirmation
+            </h3>
+
+            <p class="text-gray-600 text-sm leading-6">
+              Complete the admission formalities and confirm your seat.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       CLASSES
+  ====================================================== -->
+  <section class="py-20 bg-white">
+
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-12">
+
+        <span class="text-blue-600 font-semibold uppercase text-sm">
+          Admissions Available
+        </span>
+
+        <h2 class="text-3xl md:text-4xl font-bold mt-2">
+          Classes & Sections
+        </h2>
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+        <!-- PRIMARY -->
+        <div
+          class="card-hover rounded-3xl overflow-hidden border border-gray-100 shadow-sm bg-white"
+        >
+
+          <div class="bg-blue-600 p-7 text-white">
+
+            <i class="fa-solid fa-child-reaching text-4xl mb-4"></i>
+
+            <h3 class="text-2xl font-bold">
+              Primary
+            </h3>
+
+            <p class="text-blue-100">
+              Classes I – V
+            </p>
+
+          </div>
+
+          <div class="p-7">
+
+            <ul class="space-y-3 text-gray-600 text-sm">
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Foundation Learning
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Activity-Based Learning
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Creative Activities
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- MIDDLE -->
+        <div
+          class="card-hover rounded-3xl overflow-hidden border border-gray-100 shadow-sm bg-white"
+        >
+
+          <div class="bg-green-600 p-7 text-white">
+
+            <i class="fa-solid fa-user-graduate text-4xl mb-4"></i>
+
+            <h3 class="text-2xl font-bold">
+              Middle School
+            </h3>
+
+            <p class="text-green-100">
+              Classes VI – VIII
+            </p>
+
+          </div>
+
+          <div class="p-7">
+
+            <ul class="space-y-3 text-gray-600 text-sm">
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Concept-Based Learning
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Practical Activities
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Skill Development
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+
+        <!-- SECONDARY -->
+        <div
+          class="card-hover rounded-3xl overflow-hidden border border-gray-100 shadow-sm bg-white"
+        >
+
+          <div class="bg-purple-600 p-7 text-white">
+
+            <i class="fa-solid fa-school text-4xl mb-4"></i>
+
+            <h3 class="text-2xl font-bold">
+              Secondary
+            </h3>
+
+            <p class="text-purple-100">
+              Classes IX – X
+            </p>
+
+          </div>
+
+          <div class="p-7">
+
+            <ul class="space-y-3 text-gray-600 text-sm">
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Academic Preparation
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Examination Support
+              </li>
+
+              <li>
+                <i class="fa-solid fa-check text-green-500 mr-2"></i>
+                Career Guidance
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       DOCUMENTS + ENQUIRY
+  ====================================================== -->
+  <section
+    id="enquiry"
+    class="py-20 bg-[#0f3d5e]"
+  >
+
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="grid lg:grid-cols-2 gap-12 items-start">
+
+        <!-- DOCUMENTS -->
+        <div class="text-white">
+
+          <span class="text-yellow-300 font-semibold uppercase text-sm">
+            Keep Ready
+          </span>
+
+          <h2 class="text-3xl md:text-4xl font-bold mt-2 mb-5">
+            Required Documents
+          </h2>
+
+          <p class="text-blue-100 mb-8">
+            Please keep the following documents ready while completing the
+            admission process.
+          </p>
+
+
+          <div class="space-y-4">
+
+            <div
+              class="flex items-center gap-4 bg-white/10 border border-white/10 p-4 rounded-xl"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-cake-candles"></i>
+              </div>
+
+              <span>Birth Certificate</span>
+            </div>
+
+
+            <div
+              class="flex items-center gap-4 bg-white/10 border border-white/10 p-4 rounded-xl"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-file-lines"></i>
+              </div>
+
+              <span>Transfer Certificate</span>
+            </div>
+
+
+            <div
+              class="flex items-center gap-4 bg-white/10 border border-white/10 p-4 rounded-xl"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-file-circle-check"></i>
+              </div>
+
+              <span>Previous Report Card</span>
+            </div>
+
+
+            <div
+              class="flex items-center gap-4 bg-white/10 border border-white/10 p-4 rounded-xl"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-id-card"></i>
+              </div>
+
+              <span>Aadhaar Card</span>
+            </div>
+
+
+            <div
+              class="flex items-center gap-4 bg-white/10 border border-white/10 p-4 rounded-xl"
+            >
+              <div
+                class="w-10 h-10 rounded-lg bg-white text-blue-700 flex items-center justify-center"
+              >
+                <i class="fa-solid fa-image"></i>
+              </div>
+
+              <span>Passport Size Photographs</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ENQUIRY FORM -->
+        <div class="bg-white rounded-3xl p-7 md:p-9 shadow-2xl">
+
+          <div class="mb-7">
+
+            <span class="text-blue-600 font-semibold text-sm uppercase">
+              Get in Touch
+            </span>
+
+            <h2 class="text-3xl font-bold mt-1">
+              Admission Enquiry
+            </h2>
+
+            <p class="text-gray-500 mt-2">
+              Fill in your details and our admission team will contact you.
+            </p>
+
+          </div>
+
+
+          <form class="space-y-5">
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+              <div>
+                <label class="text-sm font-medium text-gray-700">
+                  Student Name
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Enter student name"
+                  class="w-full mt-2 px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+
+              <div>
+                <label class="text-sm font-medium text-gray-700">
+                  Parent Name
+                </label>
+
+                <input
+                  type="text"
+                  placeholder="Enter parent name"
+                  class="w-full mt-2 px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 gap-5">
+
+              <div>
+                <label class="text-sm font-medium text-gray-700">
+                  Mobile Number
+                </label>
+
+                <input
+                  type="tel"
+                  placeholder="Enter mobile number"
+                  class="w-full mt-2 px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500"
+                />
+              </div>
+
+
+              <div>
+                <label class="text-sm font-medium text-gray-700">
+                  Class Applying For
+                </label>
+
+                <select
+                  class="w-full mt-2 px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500 bg-white"
+                >
+
+                  <option>Select Class</option>
+                  <option>Class I</option>
+                  <option>Class II</option>
+                  <option>Class III</option>
+                  <option>Class IV</option>
+                  <option>Class V</option>
+                  <option>Class VI</option>
+                  <option>Class VII</option>
+                  <option>Class VIII</option>
+                  <option>Class IX</option>
+                  <option>Class X</option>
+
+                </select>
+
+              </div>
+
+            </div>
+
+
+            <div>
+
+              <label class="text-sm font-medium text-gray-700">
+                Message
+              </label>
+
+              <textarea
+                rows="4"
+                placeholder="Write your enquiry..."
+                class="w-full mt-2 px-4 py-3 rounded-xl border border-gray-200 outline-none focus:ring-2 focus:ring-blue-500 resize-none"
+              ></textarea>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3.5 rounded-xl transition shadow-lg"
+            >
+              Submit Admission Enquiry
+              <i class="fa-solid fa-paper-plane ml-2"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+       FINAL CTA
+  ====================================================== -->
+  <section class="py-16 bg-yellow-400">
+
+    <div
+      class="max-w-5xl mx-auto px-6 text-center"
+    >
+
+      <div
+        class="w-16 h-16 mx-auto bg-gray-900 text-yellow-400 rounded-2xl flex items-center justify-center mb-5"
+      >
+        <i class="fa-solid fa-graduation-cap text-2xl"></i>
+      </div>
+
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900">
+        Give Your Child the Right Start
+      </h2>
+
+      <p class="text-gray-700 mt-3 mb-7">
+        Admissions are open for the academic session 2026–27.
+      </p>
+
+      <a
+        href="#enquiry"
+        class="inline-flex items-center bg-gray-900 text-white px-7 py-3.5 rounded-xl font-semibold hover:bg-gray-800 transition"
+      >
+        Start Admission Enquiry
+        <i class="fa-solid fa-arrow-right ml-2"></i>
+      </a>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- FOOTER -->
+  <div id="footer"></div>
+
+
+  <!-- MAIN JS -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Academics | Presidency School</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .academic-card {
+      transition: all 0.35s ease;
+    }
+
+    .academic-card:hover {
+      transform: translateY(-8px);
+    }
+
+    .subject-card {
+      transition: all 0.3s ease;
+    }
+
+    .subject-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 18px 35px rgba(15, 23, 42, 0.12);
+    }
+
+    .hero-grid {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.04) 1px, transparent 1px);
+      background-size: 45px 45px;
+    }
+  </style>
+
+</head>
+
+<body class="bg-slate-50 text-gray-800">
+
+  <!-- HEADER -->
+
+  <div id="schoolinfo"></div>
+  <div id="header"></div>
+
+  <main>
+
+```
+<!-- =====================================================
+     HERO SECTION
+====================================================== -->
+
+<section
+  class="relative overflow-hidden bg-slate-950 text-white"
+>
+
+  <div class="absolute inset-0 hero-grid"></div>
+
+  <div
+    class="absolute -top-32 -right-32
+           w-96 h-96 rounded-full
+           bg-blue-600/20 blur-3xl"
+  ></div>
+
+  <div
+    class="absolute -bottom-40 -left-20
+           w-96 h-96 rounded-full
+           bg-indigo-600/20 blur-3xl"
+  ></div>
+
+
+  <div
+    class="relative z-10 max-w-7xl mx-auto
+           px-6 py-24 md:py-32"
+  >
+
+    <div class="max-w-3xl">
+
+      <span
+        class="inline-flex items-center gap-2
+               bg-blue-500/10 border border-blue-400/20
+               text-blue-300 px-4 py-2 rounded-full
+               text-sm font-medium mb-6"
+      >
+        <i class="fa-solid fa-graduation-cap"></i>
+        Education • Innovation • Excellence
+      </span>
+
+
+      <h1
+        class="text-4xl md:text-6xl
+               font-extrabold leading-tight"
+      >
+        Learning Today.
+        <span class="text-blue-400">
+          Leading Tomorrow.
+        </span>
+      </h1>
+
+
+      <p
+        class="mt-6 text-lg md:text-xl
+               text-slate-300 max-w-2xl
+               leading-relaxed"
+      >
+        Our academic programme is designed to develop strong foundations,
+        critical thinking, creativity, confidence and a lifelong passion
+        for learning.
+      </p>
+
+
+      <div class="mt-8 flex flex-wrap gap-4">
+
+        <a
+          href="#programmes"
+          class="bg-blue-600 hover:bg-blue-700
+                 px-7 py-3 rounded-lg
+                 font-semibold transition"
+        >
+          Explore Programmes
+        </a>
+
+        <a
+          href="#subjects"
+          class="border border-white/20
+                 hover:bg-white hover:text-slate-900
+                 px-7 py-3 rounded-lg
+                 font-semibold transition"
+        >
+          View Subjects
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACADEMIC INTRO
+====================================================== -->
+
+<section class="py-20 bg-white">
+
+  <div
+    class="max-w-7xl mx-auto px-6
+           grid lg:grid-cols-2 gap-14
+           items-center"
+  >
+
+    <!-- IMAGE -->
+
+    <div class="relative">
+
+      <img
+        src="assets/images/class.avif"
+        alt="Classroom Learning"
+        class="w-full h-[430px]
+               object-cover rounded-3xl shadow-2xl"
+      />
+
+      <div
+        class="absolute -bottom-7 -right-5
+               bg-blue-600 text-white
+               rounded-2xl shadow-xl
+               p-6"
+      >
+
+        <i class="fa-solid fa-book-open text-3xl mb-2"></i>
+
+        <p class="font-bold text-lg">
+          Student-Centred
+        </p>
+
+        <p class="text-blue-100 text-sm">
+          Learning Environment
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CONTENT -->
+
+    <div>
+
+      <span
+        class="text-blue-600 uppercase
+               tracking-widest text-sm font-semibold"
+      >
+        Our Academic Philosophy
+      </span>
+
+
+      <h2
+        class="text-3xl md:text-4xl
+               font-bold text-slate-900
+               mt-3 mb-6"
+      >
+        Education Beyond the Classroom
+      </h2>
+
+
+      <p class="text-gray-600 leading-7 mb-5">
+        We believe meaningful education combines knowledge with curiosity,
+        creativity, practical experience and strong values. Our teaching
+        approach encourages students to ask questions, explore ideas and
+        apply what they learn.
+      </p>
+
+
+      <p class="text-gray-600 leading-7 mb-7">
+        Teachers provide individual guidance and encourage students to
+        participate actively in academic and co-curricular activities.
+      </p>
+
+
+      <div class="grid sm:grid-cols-2 gap-5">
+
+        <div class="flex gap-3">
+
+          <div
+            class="w-10 h-10 rounded-xl
+                   bg-blue-100 text-blue-600
+                   flex items-center justify-center
+                   shrink-0"
+          >
+            <i class="fa-solid fa-lightbulb"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold">
+              Critical Thinking
+            </h3>
+
+            <p class="text-sm text-gray-500 mt-1">
+              Developing analytical abilities.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-3">
+
+          <div
+            class="w-10 h-10 rounded-xl
+                   bg-blue-100 text-blue-600
+                   flex items-center justify-center
+                   shrink-0"
+          >
+            <i class="fa-solid fa-flask"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold">
+              Practical Learning
+            </h3>
+
+            <p class="text-sm text-gray-500 mt-1">
+              Learning through activities.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-3">
+
+          <div
+            class="w-10 h-10 rounded-xl
+                   bg-blue-100 text-blue-600
+                   flex items-center justify-center
+                   shrink-0"
+          >
+            <i class="fa-solid fa-users"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold">
+              Collaboration
+            </h3>
+
+            <p class="text-sm text-gray-500 mt-1">
+              Learning together.
+            </p>
+          </div>
+
+        </div>
+
+
+        <div class="flex gap-3">
+
+          <div
+            class="w-10 h-10 rounded-xl
+                   bg-blue-100 text-blue-600
+                   flex items-center justify-center
+                   shrink-0"
+          >
+            <i class="fa-solid fa-star"></i>
+          </div>
+
+          <div>
+            <h3 class="font-bold">
+              Excellence
+            </h3>
+
+            <p class="text-sm text-gray-500 mt-1">
+              Encouraging every learner.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ACADEMIC PROGRAMMES
+====================================================== -->
+
+<section
+  id="programmes"
+  class="py-20 bg-slate-100"
+>
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="text-center max-w-2xl mx-auto mb-14">
+
+      <span
+        class="text-blue-600 uppercase
+               tracking-widest text-sm font-semibold"
+      >
+        Academic Programmes
+      </span>
+
+      <h2
+        class="text-3xl md:text-4xl
+               font-bold mt-3"
+      >
+        Learning for Every Stage
+      </h2>
+
+      <p class="text-gray-600 mt-4">
+        Our academic structure supports students at different stages
+        of their educational journey.
+      </p>
+
+    </div>
+
+
+    <div
+      class="grid md:grid-cols-2
+             lg:grid-cols-4 gap-6"
+    >
+
+      <!-- PRE PRIMARY -->
+
+      <div
+        class="academic-card bg-white
+               rounded-2xl overflow-hidden
+               shadow-sm border border-gray-100"
+      >
+
+        <div
+          class="h-2 bg-pink-500"
+        ></div>
+
+        <div class="p-7">
+
+          <div
+            class="w-14 h-14 rounded-2xl
+                   bg-pink-100 text-pink-600
+                   flex items-center justify-center
+                   text-xl mb-5"
+          >
+            <i class="fa-solid fa-child"></i>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3">
+            Pre-Primary
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Activity-based learning that develops curiosity,
+            communication and foundational skills.
+          </p>
+
+          <div class="mt-5 text-sm font-semibold text-pink-600">
+            Foundation Stage →
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- PRIMARY -->
+
+      <div
+        class="academic-card bg-white
+               rounded-2xl overflow-hidden
+               shadow-sm border border-gray-100"
+      >
+
+        <div
+          class="h-2 bg-blue-500"
+        ></div>
+
+        <div class="p-7">
+
+          <div
+            class="w-14 h-14 rounded-2xl
+                   bg-blue-100 text-blue-600
+                   flex items-center justify-center
+                   text-xl mb-5"
+          >
+            <i class="fa-solid fa-book"></i>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3">
+            Primary
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Strong foundations in languages, mathematics,
+            environmental studies and creative activities.
+          </p>
+
+          <div class="mt-5 text-sm font-semibold text-blue-600">
+            Classes I – V →
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- MIDDLE -->
+
+      <div
+        class="academic-card bg-white
+               rounded-2xl overflow-hidden
+               shadow-sm border border-gray-100"
+      >
+
+        <div
+          class="h-2 bg-indigo-500"
+        ></div>
+
+        <div class="p-7">
+
+          <div
+            class="w-14 h-14 rounded-2xl
+                   bg-indigo-100 text-indigo-600
+                   flex items-center justify-center
+                   text-xl mb-5"
+          >
+            <i class="fa-solid fa-atom"></i>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3">
+            Middle School
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Concept-based learning with experiments,
+            projects and analytical activities.
+          </p>
+
+          <div class="mt-5 text-sm font-semibold text-indigo-600">
+            Classes VI – VIII →
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- SECONDARY -->
+
+      <div
+        class="academic-card bg-white
+               rounded-2xl overflow-hidden
+               shadow-sm border border-gray-100"
+      >
+
+        <div
+          class="h-2 bg-slate-800"
+        ></div>
+
+        <div class="p-7">
+
+          <div
+            class="w-14 h-14 rounded-2xl
+                   bg-slate-100 text-slate-700
+                   flex items-center justify-center
+                   text-xl mb-5"
+          >
+            <i class="fa-solid fa-graduation-cap"></i>
+          </div>
+
+          <h3 class="text-xl font-bold mb-3">
+            Secondary
+          </h3>
+
+          <p class="text-gray-600 text-sm leading-6">
+            Focused academic preparation with analytical,
+            practical and examination-oriented learning.
+          </p>
+
+          <div class="mt-5 text-sm font-semibold text-slate-700">
+            Classes IX – X →
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     SUBJECTS
+====================================================== -->
+
+<section
+  id="subjects"
+  class="py-20 bg-white"
+>
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div class="flex flex-col md:flex-row
+                md:items-end md:justify-between
+                gap-5 mb-12">
+
+      <div>
+
+        <span
+          class="text-blue-600 uppercase
+                 tracking-widest text-sm font-semibold"
+        >
+          Core Learning Areas
+        </span>
+
+        <h2
+          class="text-3xl md:text-4xl
+                 font-bold mt-3"
+        >
+          Explore Our Subjects
+        </h2>
+
+      </div>
+
+      <p
+        class="text-gray-600 max-w-md"
+      >
+        Students receive opportunities to develop academic knowledge,
+        technological skills, creativity and communication abilities.
+      </p>
+
+    </div>
+
+
+    <div
+      class="grid grid-cols-2
+             md:grid-cols-3
+             lg:grid-cols-6 gap-5"
+    >
+
+      <!-- SUBJECT 1 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-blue-100
+                 text-blue-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-calculator"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Mathematics
+        </h3>
+
+      </div>
+
+
+      <!-- SUBJECT 2 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-green-100
+                 text-green-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-flask"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Science
+        </h3>
+
+      </div>
+
+
+      <!-- SUBJECT 3 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-purple-100
+                 text-purple-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-language"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Languages
+        </h3>
+
+      </div>
+
+
+      <!-- SUBJECT 4 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-orange-100
+                 text-orange-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-laptop-code"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Computer
+        </h3>
+
+      </div>
+
+
+      <!-- SUBJECT 5 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-red-100
+                 text-red-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-palette"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Arts
+        </h3>
+
+      </div>
+
+
+      <!-- SUBJECT 6 -->
+
+      <div
+        class="subject-card bg-slate-50
+               border border-gray-100
+               rounded-2xl p-6 text-center"
+      >
+
+        <div
+          class="w-14 h-14 mx-auto
+                 rounded-2xl bg-yellow-100
+                 text-yellow-600
+                 flex items-center justify-center
+                 text-xl mb-4"
+        >
+          <i class="fa-solid fa-futbol"></i>
+        </div>
+
+        <h3 class="font-bold">
+          Sports
+        </h3>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     LEARNING METHODOLOGY
+====================================================== -->
+
+<section
+  class="py-20 bg-slate-950 text-white"
+>
+
+  <div class="max-w-7xl mx-auto px-6">
+
+    <div
+      class="grid lg:grid-cols-2
+             gap-14 items-center"
+    >
+
+      <div>
+
+        <span
+          class="text-blue-400 uppercase
+                 tracking-widest text-sm font-semibold"
+        >
+          Teaching Methodology
+        </span>
+
+        <h2
+          class="text-3xl md:text-4xl
+                 font-bold mt-3 mb-6"
+        >
+          How We Make Learning Meaningful
+        </h2>
+
+        <p
+          class="text-slate-300
+                 leading-7 mb-8"
+        >
+          Our teaching methods combine classroom instruction with
+          practical activities, technology, projects and continuous
+          feedback.
+        </p>
+
+
+        <div class="space-y-6">
+
+          <div class="flex gap-4">
+
+            <div
+              class="w-11 h-11 shrink-0
+                     rounded-xl bg-blue-600
+                     flex items-center justify-center"
+            >
+              <i class="fa-solid fa-display"></i>
+            </div>
+
+            <div>
+
+              <h3 class="font-bold text-lg">
+                Interactive Classrooms
+              </h3>
+
+              <p class="text-slate-400 text-sm mt-1">
+                Technology-supported lessons encourage active
+                participation.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <div
+              class="w-11 h-11 shrink-0
+                     rounded-xl bg-blue-600
+                     flex items-center justify-center"
+            >
+              <i class="fa-solid fa-flask-vial"></i>
+            </div>
+
+            <div>
+
+              <h3 class="font-bold text-lg">
+                Experiential Learning
+              </h3>
+
+              <p class="text-slate-400 text-sm mt-1">
+                Students learn concepts through practical activities
+                and projects.
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <div class="flex gap-4">
+
+            <div
+              class="w-11 h-11 shrink-0
+                     rounded-xl bg-blue-600
+                     flex items-center justify-center"
+            >
+              <i class="fa-solid fa-comments"></i>
+            </div>
+
+            <div>
+
+              <h3 class="font-bold text-lg">
+                Individual Guidance
+              </h3>
+
+              <p class="text-slate-400 text-sm mt-1">
+                Teachers provide feedback and support according to
+                student needs.
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- RIGHT PANEL -->
+
+      <div
+        class="grid grid-cols-2 gap-5"
+      >
+
+        <div
+          class="bg-white/5 border
+                 border-white/10
+                 rounded-2xl p-7"
+        >
+
+          <i
+            class="fa-solid fa-brain
+                   text-blue-400 text-3xl"
+          ></i>
+
+          <h3 class="font-bold text-lg mt-5">
+            Critical Thinking
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Encouraging students to analyse and solve problems.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-white/5 border
+                 border-white/10
+                 rounded-2xl p-7 mt-8"
+        >
+
+          <i
+            class="fa-solid fa-people-group
+                   text-blue-400 text-3xl"
+          ></i>
+
+          <h3 class="font-bold text-lg mt-5">
+            Teamwork
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Building communication and collaboration skills.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-white/5 border
+                 border-white/10
+                 rounded-2xl p-7"
+        >
+
+          <i
+            class="fa-solid fa-lightbulb
+                   text-blue-400 text-3xl"
+          ></i>
+
+          <h3 class="font-bold text-lg mt-5">
+            Creativity
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Giving students opportunities to explore new ideas.
+          </p>
+
+        </div>
+
+
+        <div
+          class="bg-white/5 border
+                 border-white/10
+                 rounded-2xl p-7 mt-8"
+        >
+
+          <i
+            class="fa-solid fa-chart-line
+                   text-blue-400 text-3xl"
+          ></i>
+
+          <h3 class="font-bold text-lg mt-5">
+            Continuous Growth
+          </h3>
+
+          <p class="text-slate-400 text-sm mt-2">
+            Monitoring progress and supporting improvement.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     ASSESSMENT
+====================================================== -->
+
+<section class="py-20 bg-white">
+
+  <div class="max-w-6xl mx-auto px-6">
+
+    <div
+      class="bg-gradient-to-r
+             from-blue-600 to-indigo-700
+             rounded-3xl p-8 md:p-12
+             text-white
+             flex flex-col md:flex-row
+             items-center
+             justify-between gap-8"
+    >
+
+      <div>
+
+        <span
+          class="text-blue-200 uppercase
+                 tracking-widest text-sm
+                 font-semibold"
+        >
+          Assessment
+        </span>
+
+        <h2
+          class="text-3xl font-bold mt-2 mb-3"
+        >
+          Measuring Progress, Supporting Growth
+        </h2>
+
+        <p
+          class="text-blue-100
+                 max-w-2xl"
+        >
+          Assessments, assignments, projects, practical activities and
+          examinations help teachers understand student progress and
+          provide appropriate academic support.
+        </p>
+
+      </div>
+
+
+      <div
+        class="shrink-0 w-20 h-20
+               rounded-2xl bg-white/10
+               flex items-center
+               justify-center text-3xl"
+      >
+        <i class="fa-solid fa-chart-simple"></i>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =====================================================
+     CTA
+====================================================== -->
+
+<section
+  class="py-20 bg-slate-100"
+>
+
+  <div class="max-w-4xl mx-auto px-6 text-center">
+
+    <div
+      class="w-16 h-16 mx-auto
+             rounded-2xl bg-blue-100
+             text-blue-600
+             flex items-center justify-center
+             text-2xl mb-6"
+    >
+      <i class="fa-solid fa-graduation-cap"></i>
+    </div>
+
+    <h2
+      class="text-3xl md:text-4xl
+             font-bold text-slate-900"
+    >
+      Give Your Child a Strong Academic Foundation
+    </h2>
+
+    <p
+      class="text-gray-600 mt-4
+             max-w-2xl mx-auto"
+    >
+      Explore our academic programmes and discover a learning environment
+      designed to help students grow with confidence and purpose.
+    </p>
+
+
+    <div
+      class="flex flex-wrap
+             justify-center gap-4 mt-8"
+    >
+
+      <a
+        href="admission.html"
+        class="bg-blue-600
+               hover:bg-blue-700
+               text-white px-7 py-3
+               rounded-lg font-semibold
+               transition"
+      >
+        Admissions
+      </a>
+
+      <a
+        href="contact.html"
+        class="bg-white border
+               border-gray-200
+               hover:border-blue-500
+               text-gray-800
+               px-7 py-3
+               rounded-lg font-semibold
+               transition"
+      >
+        Contact Academic Office
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+```
+
+  </main>
+
+  <!-- FOOTER -->
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>

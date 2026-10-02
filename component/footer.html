@@ -1,0 +1,652 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Presidency School Footer</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+
+  <style>
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+
+    .school-footer {
+      background:
+        radial-gradient(
+          circle at 10% 20%,
+          rgba(33, 29, 114, 0.30),
+          transparent 30%
+        ),
+        radial-gradient(
+          circle at 90% 80%,
+          rgba(235, 189, 37, 0.10),
+          transparent 25%
+        ),
+        #07101f;
+    }
+
+
+    /* =========================================
+       FOOTER LINKS
+    ========================================= */
+
+    .footer-link {
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #ebbd25;
+      padding-left: 6px;
+    }
+
+
+    /* =========================================
+       SOCIAL ICON
+    ========================================= */
+
+    .social-icon {
+      width: 42px;
+      height: 42px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 50%;
+
+      background: rgba(255,255,255,0.08);
+
+      border: 1px solid rgba(255,255,255,0.10);
+
+      transition: all 0.3s ease;
+    }
+
+    .social-icon:hover {
+      background: #211d72;
+      border-color: #211d72;
+
+      transform: translateY(-4px);
+
+      box-shadow:
+        0 8px 20px rgba(33,29,114,0.35);
+    }
+
+
+    /* =========================================
+       CONTACT ICON
+    ========================================= */
+
+    .contact-icon {
+      width: 40px;
+      height: 40px;
+
+      min-width: 40px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 10px;
+
+      background: rgba(235,189,37,0.12);
+
+      color: #ebbd25;
+    }
+
+
+    /* =========================================
+       NEWSLETTER
+    ========================================= */
+
+    .newsletter-box {
+      background: rgba(255,255,255,0.05);
+
+      border: 1px solid rgba(255,255,255,0.08);
+
+      backdrop-filter: blur(8px);
+    }
+
+
+    /* =========================================
+       SUBSCRIBE BUTTON
+    ========================================= */
+
+    .subscribe-btn {
+      background: linear-gradient(
+        135deg,
+        #211d72,
+        #3730a3
+      );
+
+      transition: all 0.3s ease;
+    }
+
+    .subscribe-btn:hover {
+      transform: translateY(-2px);
+
+      box-shadow:
+        0 8px 20px rgba(33,29,114,0.35);
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+
+<!-- =====================================================
+     FOOTER
+====================================================== -->
+
+<footer class="school-footer text-gray-300">
+
+
+  <!-- =====================================================
+       TOP BRAND SECTION
+  ====================================================== -->
+
+  <div class="max-w-7xl mx-auto px-6 pt-16 pb-12">
+
+    <div
+      class="flex flex-col lg:flex-row
+             items-start lg:items-center
+             justify-between
+             gap-8
+             pb-10
+             border-b border-white/10"
+    >
+
+      <!-- SCHOOL NAME -->
+
+      <div>
+
+        <a
+          href="index.html"
+          class="inline-block"
+        >
+
+          <h2
+            class="text-3xl sm:text-4xl font-extrabold tracking-tight"
+          >
+            <span class="text-white">
+              Presidency
+            </span>
+
+            <span class="text-[#ebbd25]">
+              School
+            </span>
+          </h2>
+
+        </a>
+
+
+        <p class="mt-3 text-gray-400 max-w-xl text-sm sm:text-base">
+
+          Empowering young minds with knowledge,
+          character, creativity, and confidence
+          for a brighter future.
+
+        </p>
+
+      </div>
+
+
+      <!-- SOCIAL MEDIA -->
+
+      <div>
+
+        <p
+          class="text-white font-semibold mb-4"
+        >
+          Follow Us
+        </p>
+
+
+        <div class="flex gap-3">
+
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="YouTube"
+          >
+            <i class="fab fa-youtube"></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="social-icon"
+            aria-label="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         FOOTER COLUMNS
+    ====================================================== -->
+
+    <div
+      class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+             gap-10 pt-12"
+    >
+
+
+      <!-- =========================================
+           QUICK LINKS
+      ========================================== -->
+
+      <div>
+
+        <h3
+          class="text-white text-lg font-bold mb-6"
+        >
+          Quick Links
+        </h3>
+
+
+        <ul class="space-y-3 text-sm">
+
+          <li>
+            <a
+              href="index.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Home
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="about.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              About Us
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="academic.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Academics
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="admission.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Admissions
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="gallery.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Gallery
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="contact.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Contact Us
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- =========================================
+           IMPORTANT LINKS
+      ========================================== -->
+
+      <div>
+
+        <h3
+          class="text-white text-lg font-bold mb-6"
+        >
+          Important Links
+        </h3>
+
+
+        <ul class="space-y-3 text-sm">
+
+          <li>
+            <a
+              href="mandatory-disclosure.html"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Mandatory Disclosure
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              School Rules
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Academic Calendar
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Student Corner
+            </a>
+          </li>
+
+
+          <li>
+            <a
+              href="#"
+              class="footer-link inline-block"
+            >
+              <i class="fa fa-angle-right mr-2 text-[#ebbd25]"></i>
+              Careers
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+
+      <!-- =========================================
+           CONTACT
+      ========================================== -->
+
+      <div>
+
+        <h3
+          class="text-white text-lg font-bold mb-6"
+        >
+          Contact Us
+        </h3>
+
+
+        <div class="space-y-5">
+
+
+          <!-- ADDRESS -->
+
+          <div class="flex gap-3">
+
+            <div class="contact-icon">
+              <i class="fa fa-location-dot"></i>
+            </div>
+
+            <p class="text-sm leading-6 text-gray-400">
+              Sihala Road, Konisi, Sunadai<br />
+              Golanthara, Ganjam, Odisha-761008
+            </p>
+
+          </div>
+
+
+          <!-- PHONE -->
+
+          <div class="flex gap-3">
+
+            <div class="contact-icon">
+              <i class="fa fa-phone"></i>
+            </div>
+
+            <div>
+
+              <a
+                href="tel:+919876543210"
+                class="footer-link text-sm"
+              >
+                +91 9040560621
+              </a>
+
+              <p class="text-xs text-gray-500 mt-1">
+                Monday - Saturday
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- EMAIL -->
+
+          <div class="flex gap-3">
+
+            <div class="contact-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+
+            <a
+              href="mailto:school@email.com"
+              class="footer-link text-sm break-all"
+            >
+              presidency738@email.com
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =========================================
+           NEWSLETTER
+      ========================================== -->
+
+      <div>
+
+        <h3
+          class="text-white text-lg font-bold mb-6"
+        >
+          Stay Connected
+        </h3>
+
+
+        <div class="newsletter-box rounded-2xl p-5">
+
+          <p
+            class="text-sm text-gray-400 leading-6 mb-5"
+          >
+            Subscribe to receive school news,
+            announcements and important updates.
+          </p>
+
+
+          <form>
+
+            <div
+              class="flex items-center
+                     bg-gray-900
+                     border border-white/10
+                     rounded-xl
+                     overflow-hidden"
+            >
+
+              <input
+                type="email"
+                placeholder="Your Email"
+                class="w-full bg-transparent
+                       px-4 py-3
+                       text-sm
+                       text-white
+                       outline-none
+                       placeholder:text-gray-500"
+              />
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="subscribe-btn
+                     w-full
+                     mt-3
+                     py-3
+                     rounded-xl
+                     text-white
+                     text-sm
+                     font-semibold"
+            >
+              Subscribe Now
+              <i class="fa fa-arrow-right ml-2"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       BOTTOM BAR
+  ====================================================== -->
+
+  <div
+    class="border-t border-white/10
+           bg-black/20"
+  >
+
+    <div
+      class="max-w-7xl mx-auto
+             px-6 py-5
+             flex flex-col md:flex-row
+             items-center
+             justify-between
+             gap-3
+             text-center md:text-left"
+    >
+
+      <p class="text-xs sm:text-sm text-gray-500">
+
+        © 2026
+        <span class="text-gray-300 font-medium">
+          Presidency School
+        </span>.
+        All Rights Reserved.
+
+      </p>
+
+
+      <div
+        class="flex items-center gap-5 text-xs sm:text-sm"
+      >
+
+        <a
+          href="#"
+          class="hover:text-[#ebbd25] transition"
+        >
+          Privacy Policy
+        </a>
+
+        <a
+          href="#"
+          class="hover:text-[#ebbd25] transition"
+        >
+          Terms & Conditions
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+</body>
+</html>
+

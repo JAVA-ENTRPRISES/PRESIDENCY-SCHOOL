@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Presidency School</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font Awesome -->
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+  />
+
+  <style>
+    .gallery-card {
+      transition: all 0.4s ease;
+    }
+
+    .gallery-card:hover {
+      transform: translateY(-6px);
+    }
+
+    .gallery-image {
+      transition: transform 0.6s ease;
+    }
+
+    .gallery-card:hover .gallery-image {
+      transform: scale(1.08);
+    }
+  </style>
+
+</head>
+
+<body class="bg-slate-50">
+
+  <!-- HEADER -->
+
+  <div id="header"></div>
+
+  <!-- ================= HERO ================= -->
+
+  <section class="relative overflow-hidden">
+
+```
+<div class="h-[320px] md:h-[430px] relative">
+
+  <img
+    src="assets/images/gallery-banner.webp"
+    class="absolute inset-0 w-full h-full object-cover"
+    alt="School Gallery"
+  >
+
+  <!-- Dark overlay -->
+  <div class="absolute inset-0 bg-gradient-to-r from-blue-950/90 via-blue-900/60 to-black/30"></div>
+
+  <div class="relative z-10 h-full max-w-7xl mx-auto px-6 flex items-center">
+
+    <div class="max-w-2xl text-white">
+
+      <span
+        class="inline-flex items-center gap-2 bg-white/15 backdrop-blur-md px-4 py-2 rounded-full text-sm mb-5"
+      >
+        <i class="fa-solid fa-images"></i>
+        School Memories
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+        Our Gallery
+      </h1>
+
+      <p class="mt-5 text-lg md:text-xl text-blue-100">
+        Capturing Moments of Excellence, Learning, Creativity and Joy
+      </p>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= INTRO ================= -->
+
+  <section class="py-16 bg-white">
+
+```
+<div class="max-w-5xl mx-auto px-6 text-center">
+
+  <span class="text-blue-600 font-semibold uppercase tracking-widest text-sm">
+    Explore Our Memories
+  </span>
+
+  <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+    Moments That Inspire
+  </h2>
+
+  <p class="text-gray-600 max-w-3xl mx-auto mt-5 leading-relaxed">
+    Explore memorable moments from our school campus, academic activities,
+    sports, cultural celebrations and special events.
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= CATEGORY NAVIGATION ================= -->
+
+  <section class="bg-slate-50 pb-12">
+
+```
+<div class="max-w-7xl mx-auto px-6">
+
+  <div class="flex flex-wrap justify-center gap-3">
+
+    <button
+      class="px-6 py-3 rounded-full bg-blue-700 text-white font-medium shadow-md"
+    >
+      <i class="fa-solid fa-border-all mr-2"></i>
+      All
+    </button>
+
+    <button
+      class="px-6 py-3 rounded-full bg-white text-gray-700 hover:bg-blue-700 hover:text-white transition shadow-sm"
+    >
+      <i class="fa-solid fa-calendar-days mr-2"></i>
+      Events
+    </button>
+
+    <button
+      class="px-6 py-3 rounded-full bg-white text-gray-700 hover:bg-blue-700 hover:text-white transition shadow-sm"
+    >
+      <i class="fa-solid fa-futbol mr-2"></i>
+      Sports
+    </button>
+
+    <button
+      class="px-6 py-3 rounded-full bg-white text-gray-700 hover:bg-blue-700 hover:text-white transition shadow-sm"
+    >
+      <i class="fa-solid fa-school mr-2"></i>
+      Campus
+    </button>
+
+    <button
+      class="px-6 py-3 rounded-full bg-white text-gray-700 hover:bg-blue-700 hover:text-white transition shadow-sm"
+    >
+      <i class="fa-solid fa-palette mr-2"></i>
+      Activities
+    </button>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= FEATURED GALLERY ================= -->
+
+  <section class="pb-20 bg-slate-50">
+
+```
+<div class="max-w-7xl mx-auto px-6">
+
+  <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-8">
+
+    <div>
+      <p class="text-blue-600 font-semibold uppercase tracking-wider text-sm">
+        Featured
+      </p>
+
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-2">
+        School Highlights
+      </h2>
+    </div>
+
+    <p class="text-gray-500 mt-3 md:mt-0">
+      Celebrating learning and achievement
+    </p>
+
+  </div>
+
+
+  <!-- FEATURED GRID -->
+  <div class="grid md:grid-cols-5 gap-5">
+
+    <!-- Large image -->
+    <div
+      class="gallery-card md:col-span-3 relative h-[430px] rounded-3xl overflow-hidden shadow-xl group"
+    >
+
+      <img
+        src="assets/images/annual.jpg"
+        class="gallery-image absolute inset-0 w-full h-full object-cover"
+        alt="Annual Day Celebration"
+      >
+
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"
+      ></div>
+
+      <div class="absolute bottom-0 left-0 right-0 p-7 text-white">
+
+        <span class="text-sm bg-blue-600 px-3 py-1 rounded-full">
+          Events
+        </span>
+
+        <h3 class="text-2xl md:text-3xl font-bold mt-3">
+          Annual Day Celebration
+        </h3>
+
+        <p class="mt-2 text-gray-200">
+          Celebrating talent, culture, and student achievements
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- Right images -->
+    <div class="md:col-span-2 grid grid-rows-2 gap-5">
+
+      <div
+        class="gallery-card relative rounded-3xl overflow-hidden shadow-lg group"
+      >
+
+        <img
+          src="assets/images/sport.jpg"
+          class="gallery-image w-full h-full object-cover"
+          alt="Sports Day"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+        <div class="absolute bottom-5 left-5 text-white">
+
+          <h3 class="font-bold text-xl">
+            Sports Day
+          </h3>
+
+          <p class="text-sm text-gray-200">
+            Outdoor activities and competitions
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="gallery-card relative rounded-3xl overflow-hidden shadow-lg group"
+      >
+
+        <img
+          src="assets/images/science.webp"
+          class="gallery-image w-full h-full object-cover"
+          alt="Science Exhibition"
+        >
+
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
+
+        <div class="absolute bottom-5 left-5 text-white">
+
+          <h3 class="font-bold text-xl">
+            Science Exhibition
+          </h3>
+
+          <p class="text-sm text-gray-200">
+            Innovation and creativity showcase
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= GALLERY COLLECTION ================= -->
+
+  <section class="py-20 bg-white">
+
+```
+<div class="max-w-7xl mx-auto px-6">
+
+  <div class="text-center mb-12">
+
+    <span class="text-blue-600 font-semibold uppercase tracking-widest text-sm">
+      Our Collection
+    </span>
+
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mt-3">
+      Life at Presidency School
+    </h2>
+
+  </div>
+
+
+  <!-- MASONRY STYLE -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+    <!-- CARD 1 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/act.jpg"
+          class="gallery-image w-full h-full object-cover"
+          alt="Classroom Activities"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Activities
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-chalkboard-user"></i>
+          Learning
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          Classroom Activities
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Interactive learning sessions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 2 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/cul.jpg"
+          class="gallery-image w-full h-full object-cover"
+          alt="Cultural Program"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Events
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-music"></i>
+          Celebration
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          Cultural Program
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Music, dance, and performances
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 3 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/cam.avif"
+          class="gallery-image w-full h-full object-cover"
+          alt="Campus View"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Campus
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-building"></i>
+          Infrastructure
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          Campus View
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Beautiful learning environment
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 4 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/annual1.jpg"
+          class="gallery-image w-full h-full object-cover"
+          alt="School Function"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Events
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-star"></i>
+          Celebration
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          School Function
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Memorable school celebrations
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 5 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/sport.jpg"
+          class="gallery-image w-full h-full object-cover"
+          alt="Sports Day"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Sports
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-futbol"></i>
+          Sports
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          Sports Activities
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Outdoor activities and competitions
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- CARD 6 -->
+    <div class="gallery-card bg-white rounded-2xl overflow-hidden shadow-md">
+
+      <div class="relative overflow-hidden h-80">
+
+        <img
+          src="assets/images/science.webp"
+          class="gallery-image w-full h-full object-cover"
+          alt="Science Exhibition"
+        >
+
+        <div class="absolute top-4 left-4">
+          <span class="bg-white/90 backdrop-blur px-3 py-1 rounded-full text-sm font-medium text-blue-700">
+            Academic
+          </span>
+        </div>
+
+      </div>
+
+      <div class="p-5">
+
+        <div class="flex items-center gap-2 text-blue-600 text-sm mb-2">
+          <i class="fa-solid fa-flask"></i>
+          Innovation
+        </div>
+
+        <h3 class="text-xl font-bold text-gray-900">
+          Science Exhibition
+        </h3>
+
+        <p class="text-gray-500 text-sm mt-2">
+          Innovation and creativity showcase
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+```
+
+  </section>
+
+  <!-- ================= CTA ================= -->
+
+  <section class="py-20 bg-blue-700 text-white">
+
+```
+<div class="max-w-5xl mx-auto px-6 text-center">
+
+  <div class="w-16 h-16 mx-auto rounded-full bg-white/15 flex items-center justify-center mb-6">
+    <i class="fa-solid fa-camera text-2xl"></i>
+  </div>
+
+  <h2 class="text-3xl md:text-4xl font-bold">
+    Every Moment Tells a Story
+  </h2>
+
+  <p class="mt-4 text-blue-100 max-w-2xl mx-auto">
+    Discover the vibrant academic, cultural and extracurricular life
+    of Presidency School through our memorable moments.
+  </p>
+
+</div>
+```
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <div id="footer"></div>
+
+  <script src="js/main.js"></script>
+
+</body>
+</html>
